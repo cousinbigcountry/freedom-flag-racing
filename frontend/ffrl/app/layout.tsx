@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@radix-ui/react-navigation-menu";
 import { NavigationMenuContent } from "@/components/ui/navigation-menu";
 import Nav from "@/components/ui/nav";
+import UtilBar from "@/components/ui/util-bar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +39,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-        <ModeToggle></ModeToggle>
+        <UtilBar></UtilBar>
         <Nav></Nav>
         {children}
         </ThemeProvider>
